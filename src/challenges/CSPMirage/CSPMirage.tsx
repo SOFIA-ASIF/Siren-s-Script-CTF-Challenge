@@ -2,7 +2,6 @@ import Tabs from "../../components/Tabs";
 import Header from "../../components/Header";
 import NoteApp from "../../components/NoteApp";
 import Writeup from "./writeup";
-import {hints} from "./hints";
 
 
 import { useState } from "react";
@@ -17,7 +16,6 @@ export default function CSPMirage() {
       {tab === "challenge" && (
         <NoteApp
           flag={FLAG}
-          hints={hints}
           onSolve={() => {}}
         />
       )}
