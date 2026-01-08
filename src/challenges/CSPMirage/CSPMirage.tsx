@@ -1,15 +1,14 @@
-import { useState } from "react";
-import { FLAG, CSP_HEADER } from "./constants";
-import { hints } from "./hints";
-import Header from "../../components/Header";
 import Tabs from "../../components/Tabs";
+import Header from "../../components/Header";
 import NoteApp from "../../components/NoteApp";
 import Writeup from "./writeup";
+import {hints} from "./hints";
 
+
+import { useState } from "react";
+import { FLAG, CSP_HEADER } from "./constants";
 export default function CSPMirage() {
   const [tab, setTab] = useState("challenge");
-  const [solved, setSolved] = useState(false);
-
   return (
     <div className="min-h-screen bg-gray-900 text-white p-6">
       <Header />
@@ -19,7 +18,7 @@ export default function CSPMirage() {
         <NoteApp
           flag={FLAG}
           hints={hints}
-          onSolve={() => setSolved(true)}
+          onSolve={() => {}}
         />
       )}
 
