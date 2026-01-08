@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FLAG, CSP_HEADER } from "./constants";
 import { hints } from "./hints";
-import Header from "../../components/header";
+import Header from "../../components/Header";
 import Tabs from "../../components/Tabs";
 import NoteApp from "../../components/NoteApp";
 import Writeup from "./writeup";
