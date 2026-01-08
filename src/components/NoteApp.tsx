@@ -1,7 +1,5 @@
 import { useState } from "react";
-import HintBox from "./HintBox";
-
-export default function NoteApp({ flag, hints, onSolve }: any) {
+export default function NoteApp({ flag, onSolve }: any) {
   const [input, setInput] = useState("");
   const [output, setOutput] = useState("");
   const [hintLevel, setHintLevel] = useState(0);
@@ -37,11 +35,6 @@ export default function NoteApp({ flag, hints, onSolve }: any) {
         dangerouslySetInnerHTML={{ __html: output }}
       />
 
-      <HintBox
-        hints={hints}
-        level={hintLevel}
-        next={() => setHintLevel(hintLevel + 1)}
-      />
     </div>
   );
 }
