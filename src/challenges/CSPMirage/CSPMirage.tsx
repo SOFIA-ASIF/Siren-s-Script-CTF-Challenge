@@ -14,7 +14,7 @@ export default function CSPMirage() {
     <div className="min-h-screen bg-gray-900 text-white p-6">
       <Header />
       <Tabs tab={tab} setTab={setTab} />
-<p>hello</p>
+
       {tab === "challenge" && (
         <NoteApp
           flag={FLAG}
