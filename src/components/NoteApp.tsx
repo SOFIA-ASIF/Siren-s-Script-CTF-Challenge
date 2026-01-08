@@ -2,7 +2,6 @@ import { useState } from "react";
 export default function NoteApp({ flag, onSolve }: any) {
   const [input, setInput] = useState("");
   const [output, setOutput] = useState("");
-  const [hintLevel, setHintLevel] = useState(0);
 
   function run() {
     const sanitized = input.replace(/script/gi, "");
