@@ -5,9 +5,8 @@ export default function Writeup() {
       <p>
         CSP only blocks inline scripts, not inline event handlers.
       </p>
-      <pre className="bg-black p-4 rounded text-green-400">
-        {`<img src="x" onerror="alert(document.domain)">`}
-      </pre>
+  
+     
     </div>
   );
 }
